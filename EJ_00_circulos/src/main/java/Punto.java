@@ -12,11 +12,5 @@ public class Punto {
 	public double distancia_a_punto(Punto otro) {
 		return Math.hypot(this.x-otro.x,this.y-otro.y);
 	}
-
-	@Override
-	public String toString() {
-		return "Punto [x=" + x + ", y=" + y + "]";
-	}
-	
 	
 }
