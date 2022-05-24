@@ -74,5 +74,33 @@ public class GestorArchivos {
 	public char[][] getLetras() {
 		return letras;
 	}
+	
+	public void escribirDOOM() {
+		try {
+			FileWriter output = new FileWriter(path +".in");
+			PrintWriter print_output = new PrintWriter(output);
+			
+			print_output.print(100000);
+			print_output.print(" ");
+			print_output.println(10000000);
+			for (int i = 0; i < 100000; i++) {
+				for (int j = 0; j < 99999; j++) {
+					print_output.print('a');
+				}
+				print_output.println('a');
+			}
+			for (int i = 0; i < 10000000; i++) {
+				print_output.println("aa");
+			}
+			output.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
 
 }

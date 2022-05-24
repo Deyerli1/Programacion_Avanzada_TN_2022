@@ -52,7 +52,7 @@ public class Jueguito {
 		if(indice == palabra.length()-1 && letras[fil][col]==palabra.charAt(indice)) {
 			return true;
 		}
-		if( col < letras.length && letras[fil][col]==palabra.charAt(indice)) {
+		if( col < letras.length-1 && letras[fil][col]==palabra.charAt(indice)) {
 			return buscarEste(fil,col+1,indice+1,palabra);
 		}
 		return false;
@@ -62,7 +62,7 @@ public class Jueguito {
 		if(indice == palabra.length()-1 && letras[fil][col]==palabra.charAt(indice)) {
 			return true;
 		}
-		if( fil < letras.length && letras[fil][col]==palabra.charAt(indice)) {
+		if( fil < letras.length-1 && letras[fil][col]==palabra.charAt(indice)) {
 			return buscarSur(fil+1,col,indice+1,palabra);
 		}
 		return false;
