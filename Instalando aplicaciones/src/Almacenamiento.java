@@ -37,7 +37,7 @@ public class Almacenamiento {
 					maxSizeFound = currentSize;
 					purged = app;
 				}
-			} // CC de estos ciclos?
+			} // CC de estos ciclos? nlogn at least
 			if (maxSizeFound >= appSize) {
 				break;
 			} else {
