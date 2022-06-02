@@ -4,7 +4,8 @@ public class Main {
  
 	public static void main(String[] args) {
 		
-		
+		System.out.println(	5%2);
+		System.exit(0);
 		ArrayList<Mesada> mesadas = new ArrayList<Mesada>();
 		int pilas=0;
 		mesadas.add(new Mesada(4,5));

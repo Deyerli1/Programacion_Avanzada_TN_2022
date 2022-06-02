@@ -8,9 +8,9 @@ public class EjercicioOIA {
 	public static void main(String[] args) {
 		EjercicioOIA ejercicio = new EjercicioOIA();
 		
-		ejercicio.leer("src/unlam/progava/oia/in/01.in");
+		ejercicio.leer("data.in");
 		ejercicio.resolver();
-		ejercicio.escribir("src/unlam/progava/oia/out/01.out");
+		ejercicio.escribir("data.out");
 	}
 
 	/**
