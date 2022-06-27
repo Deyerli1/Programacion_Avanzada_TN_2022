@@ -41,4 +41,5 @@ public class EjercicioOIA {
 		ronda = new Ronda(archivo.getCantAventureros());
 		ronda.cebar(archivo.getMovimientos());
 	}
+	
 }
