@@ -46,7 +46,7 @@ public class Grafo {
 			for(int i = 0; i<cantNodos;i++) {
 				
 				int distancia = matrizAdj[actual.getId()-1][i];
-				
+//// HACER BFS DESPUES POR CADA ARISTA BASURA				
 				if(distancia <= 100 && !visitados[i]) {
 					if(distancia <=50 ) {
 						nodoPQ.add(nodos.get(i));
