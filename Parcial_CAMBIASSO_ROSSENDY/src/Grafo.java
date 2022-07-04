@@ -57,16 +57,16 @@ public class Grafo {
 			visitados[i] = false;
 		}
 
-		nodoCola.add(inicio);
+		nodoCola.add(inicio-1);
 
 		while (!nodoCola.isEmpty()) {
-			int nodo = nodoCola.poll();
+			int nodo = nodoCola.poll();	
 			visitados[nodo] = true;
 			int[] vecinos = matAdj[nodo];
 
 			for (int i = 0; i < cantNodos; i++) {
 				if (!visitados[i] && vecinos[i] > 0) {
-					nodoCola.add(vecinos[i]);
+					nodoCola.add(i);
 					visitados[i] = true;
 				}
 			}
